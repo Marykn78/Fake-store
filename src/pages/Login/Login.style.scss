@@ -1,0 +1,100 @@
+@import "../../styles/variable.scss";
+
+@font-face {
+    font-family: 'dana';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('../../assets/fonts/dana-regular.woff2') format('woff2');
+  }
+*{
+    font-family: dana;
+}
+.login-container{
+    display: flex;
+    justify-content: center;
+    background-color: #0b8978cd;
+    width: 100%;
+    height: 100%;
+    padding:20px;
+    .login{
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        display: flex; 
+        flex-direction: column;
+        background-color: white;
+        height:100%;
+        margin-right: 40px;
+        padding-top: 40px;
+        border-radius: 10px;
+        width:32%;
+        text-align:right;
+        p{
+            text-align: center;
+            padding-right: 100px;
+            margin-bottom: 18px;
+            font-family:sans-serif ;
+            color: rgba(128, 128, 128, 0.914);
+            font-weight: 600;
+        }
+        .icon{
+            margin-top:20px;
+            margin-bottom: 60px;
+        }
+        a{
+            text-decoration: none;
+            padding-right: 40px;
+            color: rgba(106, 105, 105, 0.922);
+        } 
+        h1{
+            text-align:center;
+            font-weight: 800;
+            font-size: 42px;
+            color: rgba(0, 0, 0, 0.759);
+        }
+        .login-lable{
+            margin-right:60px;
+        }
+        input[type=text]{
+            border: 0;
+            margin-bottom: 35px;
+            margin-top: 10px;
+            margin-right: 60px;
+            background-color: transparent;
+            border-bottom: 1px solid rgba(139, 131, 131, 0.5);
+            width: 390px;
+            padding:8px 20px 18px 2px;
+            font-size:16px;
+            font-family: FontAwesome;
+            font-weight: normal;
+        }
+        input[type=submit]{
+            cursor: pointer;
+            width: 400px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+            color: white;
+            margin:30px;
+            font-size: 1rem;
+            font-weight: 900;
+            background-color: #0b8978cd;
+        }
+        .facebook {
+            margin-right: 30px;
+            display: inline-block;
+            content: url('https://api.iconify.design/entypo-social/facebook-with-circle.svg?color=%233b5998&width=70');
+        
+        }
+        .fa-twitter {
+            content: url('https://api.iconify.design/entypo-social/twitter-with-circle.svg?color=%2355acee&width=70');
+        }
+          
+        .google {
+            content: url('https://api.iconify.design/ant-design/google-circle-filled.svg?color=%23dd4b39&width=70');
+        }
+    }
+}
+
+
+
+
+
